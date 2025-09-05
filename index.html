@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow">
+
+    <title>Contact Form Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="first-section">
+        <header>
+            <div class="social-icons item1">
+                <a href="#" class="fa-brands fa-x-twitter"></a>
+                <a href="#" class="fa-brands fa-instagram"></a>
+                <a href="#" class="fa-brands fa-linkedin"></a>
+                <i class="fas fa-bars" onclick="openNavBar()"></i>
+            </div>
+            <nav>
+                <div class="nav item2">
+                    <a href="index.html" class="nav-links">Home</a>
+                    <a href="about.html" class="nav-links">About</a>
+                </div>
+                <a href="#" class="logo"><img src="logo.png" alt="logo"></a>
+                <div class="nav">
+                    <a href="service.html" class="nav-links">Services</a>
+                    <a href="contact.html" class="nav-links">Contact</a>
+                </div>
+            </nav>
+            <div class="small-screen">
+                <a href="index.html" class="nav-links active">Home</a>
+                <a href="about.html" class="nav-links">About</a>
+                <a href="service.html" class="nav-links">Services</a>
+                <a href="contact.html" class="nav-links">Contact</a>
+            </div>
+            <a href="#" class="nav-links cta item3" aria-label="Call-to-action button">Let's Talk</a>
+        </header>
+        <div class="hero">
+            <div class="row1">
+                <h1>Contact Me</h1>
+                <p>Aliquet adipiscing in dignissim scelerisque fermentum nibh condimentum <br>ligula eget nunc blandit interdum eros, massa ante ipsum senectus quis in.</p>
+            </div>
+            <div class="row2">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="04143e5b-1dc9-4b29-baf0-3ca6ce570853">
+
+                    <input class="item1" type="text" name="firstname" id="firstname" placeholder="Firstname" required>
+                    <input class="item2" type="text" name="lastname" id="lastname" placeholder="Lastname" required>
+                    <input class="item3" type="email" name="email" id="email" placeholder="Enter you email..." required>
+                    <input class="item4" type="number" name="phone" id="phone" placeholder="Phone No" required>
+                    <input class="item5" type="text" name="company" id="company" placeholder="Company" required>
+                    <textarea class="item6" name="message" id="message" placeholder="Message"></textarea>
+                    <button type="submit">Send message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
